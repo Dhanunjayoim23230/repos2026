@@ -1,0 +1,95 @@
+timedatectl list-timezones
+timedatectl status
+$TZ='Asia/Kolkata' date  --> override the system default time date zone into IST
+$TZ='Asia/Kolkata' date +"%y-%m-%d"
+
+List of Format Specifiers Used with Date Command
+The %d option is used to list of all format specifiers, adjoining to it different apprevations are used to specify the exact day, month or year. Have a look at the syntax below:
+
+%D: Display date as mm/dd/yy.       
+%d: Display the day of the month (01 to 31).       
+%a: Displays the abbreviated name for weekdays (Sun to Sat).
+%A: Displays full weekdays (Sunday to Saturday).
+%h: Displays abbreviated month name (Jan to Dec).
+%b: Displays abbreviated month name (Jan to Dec).
+%B: Displays full month name(January to December).
+%m: Displays the month of year (01 to 12).
+%y: Displays last two digits of the year(00 to 99).
+%Y: Display four-digit year. 
+%T: Display the time in 24 hour format as HH:MM:SS.
+%H: Display the hour.
+%M: Display the minute.
+%S: Display the seconds.
+""""""
+[ec2-user@ip-172-31-27-37 ~]$ TZ='Asia/Kolkata' date +'%a %A'
+Thu Thursday
+[ec2-user@ip-172-31-27-37 ~]$ TZ='Asia/Kolkata' date +'%b %B'
+Jan January
+[ec2-user@ip-172-31-27-37 ~]$ TZ='Asia/Kolkata' date +'%c %C'
+Thu Jan  8 21:53:09 2026 20
+[ec2-user@ip-172-31-27-37 ~]$ TZ='Asia/Kolkata' date +'%d %D'
+08 01/08/26
+[ec2-user@ip-172-31-27-37 ~]$ TZ='Asia/Kolkata' date +'%e %E'
+ 8 %E
+[ec2-user@ip-172-31-27-37 ~]$ 
+[ec2-user@ip-172-31-27-37 ~]$ TZ='Asia/Kolkata' date +'%f %F'
+%f 2026-01-08
+[ec2-user@ip-172-31-27-37 ~]$ TZ='Asia/Kolkata' date +'%g %G'
+26 2026
+[ec2-user@ip-172-31-27-37 ~]$ TZ='Asia/Kolkata' date +'%h %H'
+Jan 21
+
+""""""
+""
+[ec2-user@ip-172-31-27-37 ~]$ TZ='Asia/Kolkata' date +'%A %B %d %Y %T'
+Thursday January 08 2026 21:58:44
+""
+
+Syntax:
+date [OPTION]... [+FORMAT]
+date [-u|--utc|--universal] [MMDDhhmm[[CC]YY][.ss]]
+
+Syntax:  
+
+date --date=" datestring " + FORMAT
+
+[ec2-user@ip-172-31-27-37 ~]$ date -d 'dec 25 2025' +%Y
+2025
+[ec2-user@ip-172-31-27-37 ~]$ date -d 'Dec 20 2026'
+Sun Dec 20 00:00:00 UTC 2026
+[ec2-user@ip-172-31-27-37 ~]$ date -d "2 years ago"
+Mon Jan  8 16:33:14 UTC 2024
+[ec2-user@ip-172-31-27-37 ~]$ date -d 'tomorrow'
+Fri Jan  9 16:33:25 UTC 2026
+[ec2-user@ip-172-31-27-37 ~]$ date -d "yesterday"
+Wed Jan  7 16:33:40 UTC 2026
+[ec2-user@ip-172-31-27-37 ~]$ date -d 'today'
+Thu Jan  8 16:33:49 UTC 2026
+
+
+Set the System Date and Time in Linux
+There are different types of methods to set date and time for temporary changes and also for persistent changes on modern systems.
+
+Method 1: Use the -s or --set option to set the system date and time to a specific value.
+Syntax:  
+
+sudo date -s "date to be set"
+Example:
+
+date -s "2025-07-27"
+date1
+Method 2: By using date.
+Syntax:
+
+sudo date MMDDhhmmYYYY
+Example:
+
+sudo date 081210352025
+date2
+Method 3: By using 'timedatectl'
+Syntax:
+
+sudo timedatectl set-time 'Enter the date and time'
+Example:
+
+sudo timedatectl set-time '2025-07-26 10:30:00'

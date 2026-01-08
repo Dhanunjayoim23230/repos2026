@@ -13,11 +13,9 @@ Write a script to add two numbers passed as command-line arguments.
 
 🟡 Level 2: Conditions & Loops
 Script to check whether a number is:
-
 Positive
 
 Negative
-
 Zero
 
 Script to print numbers from 1 to 10 using:
