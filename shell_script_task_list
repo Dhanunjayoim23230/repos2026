@@ -1,0 +1,532 @@
+🟢 Level 1: Basics (Syntax & Commands)
+Write a script that prints:
+Hostname
+Current date and time
+Logged-in user
+Script to accept your name as input and print:
+Hello <name>, welcome to shell scripting
+Write a script to check:
+If a file exists
+If it is readable, writable, executable
+Script to display the current working directory and list files with details.
+Write a script to add two numbers passed as command-line arguments.
+
+🟡 Level 2: Conditions & Loops
+Script to check whether a number is:
+
+Positive
+
+Negative
+
+Zero
+
+Script to print numbers from 1 to 10 using:
+
+for loop
+
+while loop
+
+Script to find whether a given file is empty or not.
+
+Write a script to display even numbers from 1 to 50.
+
+Script to check if a user exists in /etc/passwd.
+
+🟠 Level 3: Files & Text Processing
+
+Script to count:
+
+Lines
+
+Words
+
+Characters
+in a file.
+
+Script to search a word in a file and display matching lines with line numbers.
+
+Write a script to display top 5 largest files in a directory.
+
+Script to replace a word in a file (take inputs from user).
+
+Script to read a file line by line and print line numbers.
+
+🔵 Level 4: Functions & Arguments
+
+Write a script with a function to calculate factorial of a number.
+
+Script using functions to:
+
+Create a directory
+
+Set permissions
+
+Create a file inside it
+
+Script that accepts multiple arguments and prints them one by one.
+
+Write a script that validates the number of arguments passed.
+
+Script with a function to check disk usage and alert if >80%.
+
+🟣 Level 5: System & Admin Practice
+
+Script to check:
+
+CPU usage
+
+Memory usage
+
+Disk usage
+
+Script to check whether a service (e.g., ssh) is running.
+
+Write a script to find and delete files older than 7 days in a directory.
+
+Script to monitor a log file and alert when the word “ERROR” appears.
+
+Script to take backup of a directory with timestamp.
+
+🔴 Level 6: Real-World Mini Tasks
+
+Script to check server uptime and reboot if uptime > X days (print only, don’t reboot).
+
+Script to monitor free space and send email alert (mock email with echo).
+
+Script to rotate logs (rename + compress).
+
+Script to generate a simple system health report.
+
+Script to automate cleanup of temp files and log the actions.
+
+⭐ Bonus Challenges
+
+Menu-driven script using case.
+
+Script using cron (write the script + cron entry).
+
+Script to parse a CSV file and print selected columns.
+Script to read user input securely (no echo).
+Script to check multiple servers using SSH (simulation).
+
+🧠 Practice Tip
+For each task:
+Add comments
+Handle errors
+Use meaningful variable names
+Use set -x for debugging
+
+****************************************************************************************
+Give interview-oriented shell scripting questions
+
+Below is a carefully curated list of interview-oriented Shell Scripting questions, commonly asked for Linux / Unix / DevOps / Middleware / Oracle / Production Support roles.
+Questions are grouped by difficulty, and I’ve added what the interviewer is testing so you know how to think, not just memorize.
+
+🟢 Beginner Level (Very Common)
+
+What is a shell? Difference between sh, bash, ksh?
+
+What are positional parameters? Explain $0, $1, $@, $#.
+
+Difference between "$@" and "$*"?
+
+How do you check if a file exists in shell script?
+
+Difference between = and -eq in shell?
+
+How do you read user input in a shell script?
+
+What is the purpose of #!/bin/bash?
+
+How do you make a script executable?
+
+Difference between echo and printf?
+
+What is exit status? How do you check it?
+
+👉 Testing basic shell fundamentals
+
+🟡 Intermediate Level (Most Interviewed)
+
+Explain if, case, and select statements.
+
+Difference between while, until, and for loops?
+
+How do you debug a shell script?
+
+What is the difference between single quotes and double quotes?
+
+Explain test, [ ], and [[ ]].
+
+How do you handle errors in shell scripts?
+
+How do you schedule a shell script?
+
+Difference between $? and $$?
+
+How do you redirect stdout and stderr?
+
+Explain pipes with an example.
+
+👉 Testing control flow and debugging skills
+
+🟠 File & Text Processing (Very Important)
+
+Difference between grep, egrep, and fgrep?
+
+How do you find a word in a file and count occurrences?
+
+Explain sed vs awk. When do you use which?
+
+How do you print the 5th column of a file?
+
+How do you remove empty lines from a file?
+
+Difference between cut and awk?
+
+How do you replace a string in multiple files?
+
+How do you read a file line by line?
+
+How do you find top 10 largest files in a directory?
+
+Explain xargs with a real example.
+
+👉 Testing real-world log parsing & automation
+
+🔵 Process & System Monitoring
+
+How do you check if a process is running using shell?
+
+How do you kill a process gracefully and forcefully?
+
+Explain ps, top, htop, and uptime.
+
+How do you check disk usage and alert if >80%?
+
+Difference between cron and at?
+
+What happens if a cron job fails? How do you debug?
+
+How do you run a script in background?
+
+Explain signal handling in shell scripting.
+
+How do you find zombie processes?
+
+Explain load average.
+
+👉 Testing production support readiness
+
+🟣 Functions & Advanced Scripting
+
+How do you define and call a function in shell?
+
+Difference between return and exit?
+
+What is sourcing a script? (. vs ./script.sh)
+
+How do you pass arguments to a function?
+
+What is set -e, set -x, set -u?
+
+Explain traps in shell scripting.
+
+Difference between local and global variables?
+
+How do you lock a script to avoid multiple executions?
+
+How do you parse command-line options?
+
+Explain here-document (<<EOF).
+
+👉 Testing script robustness & maintainability
+
+🔴 Scenario-Based (Highly Valued)
+
+Write a script to monitor disk space and send alert.
+
+How do you automate log rotation using shell?
+
+Script to check application health and restart if down.
+
+How do you handle passwords securely in shell scripts?
+
+Script to find and delete files older than 30 days.
+
+How do you ensure a script runs only once at a time?
+
+Script to extract ERROR messages from logs daily.
+
+How do you make your script environment-independent?
+
+How do you handle large files efficiently?
+
+Explain a production issue you solved using shell scripting.
+
+👉 Testing problem-solving and experience
+
+⭐ Common Tricky Questions
+
+Why does a script work manually but fail in cron?
+
+Difference between env and export?
+
+What is IFS? Why is it important?
+
+How do you handle filenames with spaces?
+
+Difference between subshell and current shell?
+
+💡 Interview Tip
+
+When answering:
+Explain logic first
+Mention commands used
+Talk about error handling
+Show production awareness
+
+****************************************************************************************************
+🟢 Easy Coding Questions
+1️⃣ Print System Information
+
+Write a shell script to print:
+
+Hostname
+
+OS version
+
+Kernel version
+
+Current date & time
+
+2️⃣ Check File Existence
+
+Write a script that:
+
+Takes a filename as input
+
+Checks whether it exists
+
+Prints file permissions if it exists
+
+3️⃣ Add Two Numbers
+
+Write a script to:
+
+Accept two numbers as command-line arguments
+
+Print their sum
+
+Validate input
+
+4️⃣ Even or Odd
+
+Write a script to:
+
+Accept a number
+
+Check whether it is even or odd
+
+5️⃣ Count Lines in a File
+
+Write a script to:
+
+Accept a file name
+
+Print the number of lines in the file
+
+🟡 Medium Coding Questions (Very Common)
+6️⃣ Disk Usage Monitor
+
+Write a script to:
+
+Check disk usage
+
+Print warning if usage is above 80%
+
+7️⃣ Check Process Status
+
+Write a script to:
+
+Check whether a given process (e.g., sshd) is running
+
+Print PID if running
+
+8️⃣ Print Top 5 Largest Files
+
+Write a script to:
+
+Find top 5 largest files in a directory
+
+Sort by size
+
+9️⃣ Search and Count Word
+
+Write a script to:
+
+Search for a word in a file
+
+Print the number of occurrences
+
+🔟 Backup Script
+
+Write a script to:
+
+Take backup of a directory
+
+Add timestamp to backup name
+
+Store in /backup
+
+🟠 Intermediate Coding Questions (Real-World)
+1️⃣1️⃣ Delete Old Files
+
+Write a script to:
+
+Delete files older than 7 days from a directory
+
+Log deleted file names
+
+1️⃣2️⃣ Read File Line by Line
+
+Write a script to:
+
+Read a file line by line
+
+Print line number and content
+
+1️⃣3️⃣ Service Monitor Script
+
+Write a script to:
+
+Check if a service is running
+
+Restart it if stopped
+
+Log the action
+
+1️⃣4️⃣ CPU & Memory Usage
+
+Write a script to:
+
+Display CPU usage
+
+Display memory usage
+
+1️⃣5️⃣ Menu-Driven Script
+
+Write a script with menu options:
+
+Check disk usage
+
+Check memory
+
+Check uptime
+
+Exit
+
+🔵 Advanced Coding Questions (Strong Candidates)
+1️⃣6️⃣ Log Analyzer
+
+Write a script to:
+
+Extract ERROR lines from a log file
+
+Save them into a new file with today’s date
+
+1️⃣7️⃣ Script Locking
+
+Write a script to:
+
+Prevent multiple executions using lock file
+
+1️⃣8️⃣ Argument Validation Script
+
+Write a script to:
+
+Accept multiple arguments
+
+Validate minimum number of arguments
+
+Print usage message
+
+1️⃣9️⃣ CSV File Parser
+
+Write a script to:
+
+Read a CSV file
+
+Print only 1st and 3rd columns
+
+2️⃣0️⃣ Application Health Check
+
+Write a script to:
+
+Check if app port is listening
+
+Check process status
+
+Print overall health status
+
+🔴 Scenario-Based Coding (Top Interviews)
+2️⃣1️⃣ Disk Alert Script
+
+Write a script to:
+
+Monitor disk usage
+
+Send alert if usage exceeds threshold (print alert)
+
+2️⃣2️⃣ Cron-Safe Script
+
+Write a script that:
+
+Works correctly when run from cron
+
+Uses absolute paths
+
+Redirects logs
+
+2️⃣3️⃣ Log Rotation
+
+Write a script to:
+
+Rename log files
+
+Compress old logs
+
+Keep last 7 days only
+
+2️⃣4️⃣ Environment-Independent Script
+
+Write a script to:
+
+Detect OS
+
+Run commands accordingly
+
+2️⃣5️⃣ Production-Ready Script
+
+Write a script to:
+
+Check disk, memory, CPU
+
+Log results
+
+Exit with proper status code
+
+🎯 Interview Evaluation Criteria
+What They Look For	How to Show It
+Logic	Clear steps
+Safety	Input validation
+Reliability	Error handling
+Readability	Comments & structure
+Admin mindset	Logs & alerts
+💡 Pro Tip
+
+Before coding:
+Ask clarifying questions (if allowed)
+Explain your approach
+Handle edge cases
+************************************************************************************
