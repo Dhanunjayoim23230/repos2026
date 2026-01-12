@@ -6,8 +6,10 @@
 #Logged-in user
 
 
-hostname -i
+echo "hostname of present server: $(hostname -i)"
 
-systemdate 
+$(TZ=Asia/Kolkata date + (%Y-%m-%d))
 
-id
+echo "logged - in user :$id "
+
+echo "LOGGED IN USER: $user "
