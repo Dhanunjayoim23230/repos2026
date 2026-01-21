@@ -3,7 +3,7 @@
 N1=$1
 N2=$2
 
-TIMESTAMP=$date
+TIMESTAMP=$(date)
 
 echo "script executed at: ${TIMESTAMP}"
 
