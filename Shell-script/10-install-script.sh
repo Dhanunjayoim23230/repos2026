@@ -28,7 +28,11 @@ if [ $? -ne 0 ]
 then
     echo " MYSQL is installed..:: SUCCESS "
 else
-    echo "MYSQL is not installed ..:: FAILED"
+    dnf list installed mysql -y
+    if [$? -eq 0 ]
+    then
+    echo "MYSQL is already installed ..:: SUCCESS"
+    fi
 fi
 
 
@@ -39,7 +43,11 @@ if [ $? -ne 0 ]
 then
     echo " GIT is installed..:: SUCCESS "
 else
-    echo "GIT is not installed ..:: FAILED"
+    dnf list installed -y
+    if [ $? -eq 0 ]
+    then
+    echo "GIT is already installed ..:: SUCCESS"
+    fi
 fi
 
 
