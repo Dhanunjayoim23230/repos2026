@@ -33,13 +33,13 @@ VALIDATE(){
 CHECK_ROOT 
 
 dnf list installed mysql
-if [ $? -ne 0 ]
+if [ $? -eq 0 ]
 then
-    echo "Mysql is already installed"
-else
     echo "Mysql is not installed"
     dnf installed mysql -y
     VALIDATE $? "MYSQL IS installing"
+else
+    echo "Mysql is already installed"
 fi
 
 
