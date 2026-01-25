@@ -5,7 +5,7 @@
 # -le, -ge, -lt, -gt, -eq
 Number=$1
 
-if [$1 -le 100]
+if [ $1 -le 100 ]
     then
         echo "Given number $1 is less than or equal to 100"
     else    
