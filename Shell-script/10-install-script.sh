@@ -32,7 +32,7 @@ VALIDATE(){
 
 CHECK_ROOT 
 
-dnf list available mysql
+dnf list installed mysql
 if [ $? -ne 0 ]
 then
     echo "Mysql is already installed"
