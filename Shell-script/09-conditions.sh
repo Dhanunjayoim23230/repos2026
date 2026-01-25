@@ -1,6 +1,6 @@
 #!bin/bash
 
-echo "print given number is less than 100"
+#echo "print given number is less than 100"
 
 # -le, -ge, -lt, -gt, -eq
 Number=$1
