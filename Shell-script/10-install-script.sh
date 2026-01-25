@@ -4,7 +4,7 @@
 #install git and mysql
 
 
-LOG_FILE=$( echo $0 | cut -d "." -f1)
+LOG_FILE=$(echo "$0" | cut -d "." -f1)
 TIMESTAMP=$(date +%Y-%m-%d_%H-%M-%S)
 LOGS_FOLDER="/home/ec2-user/shell_script_logs"
 LOGS_FILE_NAME="$LOGS_FOLDER/$LOGS_FILE-$TIMESTAMP.logs"
