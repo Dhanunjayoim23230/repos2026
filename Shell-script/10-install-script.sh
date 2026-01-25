@@ -4,7 +4,7 @@
 #install git and mysql
 
 
-mkdir -p /home/ec2-user/shell_script_logs
+mkdir -p "/home/ec2-user/shell_script_logs"
 
 LOG_FILE="$(echo "$0" | cut -d "." -f1)"
 TIMESTAMP=$(date +%Y-%m-%d_%H-%M-%S)
