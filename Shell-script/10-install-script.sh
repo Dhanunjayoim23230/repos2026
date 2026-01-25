@@ -23,12 +23,12 @@ CHECK_ROOT(){
 
 CHECK_ROOT 
 
-dnf install mysql -y
+dnf install mysql -y &>>$LOGS_FILE_NAME
 if [ $? -ne 0 ]
 then
     echo " MYSQL is installed..:: SUCCESS "
 else
-    dnf list installed mysql -y
+    dnf list installed mysql -y &>>$LOGS_FILE_NAME
     if [$? -eq 0 ]
     then
     echo "MYSQL is already installed ..:: SUCCESS"
@@ -37,13 +37,13 @@ fi
 
 
 
-dnf install git -y
+dnf install git -y &>>$LOGS_FILE_NAME
 
 if [ $? -ne 0 ]
 then
     echo " GIT is installed..:: SUCCESS "
 else
-    dnf list installed -y
+    dnf list installed -y &>>$LOGS_FILE_NAME
     if [ $? -eq 0 ]
     then
     echo "GIT is already installed ..:: SUCCESS"
