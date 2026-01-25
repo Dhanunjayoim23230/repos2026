@@ -24,9 +24,9 @@ CHECK_ROOT(){
 VALIDATE(){
     if [ $1 -eq 0 ]
     then
-        echo "$2 is already installed :: SUCCESS "
+        echo "$2 ........ :: SUCCESS "
     else
-        echo "$2 is not installed :: FAILED "
+        echo "$2 ......... :: FAILED "
     fi
 }
 
