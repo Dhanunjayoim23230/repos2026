@@ -43,7 +43,7 @@ if [ $? -ne 0 ]
 then
     echo " GIT is installed..:: SUCCESS "
 else
-    dnf list installed -y &>>$LOGS_FILE_NAME
+    dnf list installed git -y &>>$LOGS_FILE_NAME
     if [ $? -eq 0 ]
     then
     echo "GIT is already installed ..:: SUCCESS"
