@@ -29,7 +29,7 @@ then
     echo " MYSQL is installed..:: SUCCESS "
 else
     dnf list installed mysql  &>>$LOGS_FILE_NAME
-    if [$? -eq 0 ]
+    if [ $? -eq 0 ]
     then
     echo "MYSQL is already installed ..:: SUCCESS"
     fi
