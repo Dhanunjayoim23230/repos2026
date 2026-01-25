@@ -34,10 +34,8 @@ CHECK_ROOT
 dnf install mysql -y
 VALIDATE $? "MYSQL IS installing"
 
+dnf install git -y
+VALIDATE $? "GIT IS Installing"
 
 
 
-
-#dnf list available git -y
-
-#dnf install git -y
