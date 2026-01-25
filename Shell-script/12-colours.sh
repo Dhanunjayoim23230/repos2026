@@ -48,7 +48,7 @@ else
 fi
 
 
-dnf list installed git
+dnf list installed git &>>$LOGS_FILE_NAME
 
 if [ $? -ne 0 ]
 then
