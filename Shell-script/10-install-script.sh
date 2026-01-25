@@ -31,7 +31,7 @@ VALIDATE(){
 }
 
 CHECK_ROOT 
-dnf installed mysql -y
+dnf install mysql -y
 VALIDATE $? "MYSQL IS installing"
 
 
