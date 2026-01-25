@@ -36,13 +36,27 @@ VALIDATE(){
 
 CHECK_ROOT 
 
-dnf install mysql -y &>>$LOGS_FILE_NAME
-VALIDATE $? "MYSQL installing"
+
+dnf list installed mysql &>>$LOGS_FILE_NAME
+ if [ $? -ne 0 ]
+ then
+    echo -e " MYSQL is not installed "
+    dnf install mysql -y &>>$LOGS_FILE_NAME
+    VALIDATE $? "MYSQL installing"
+else
+    echo -e " $Y MYSQL is alreay installed $N "
+fi
 
 
+dnf list installed git
 
-dnf install git -y &>>$LOGS_FILE_NAME
-
-VALIDATE $? "GIT installing"
+if [ $? -ne 0 ]
+then
+    echo -e "GIT is not installed "
+    dnf install git -y &>>$LOGS_FILE_NAME
+    VALIDATE $? "GIT installing"
+else
+    echo -e " $Y GIT is already installed $N"
+fi
 
 
