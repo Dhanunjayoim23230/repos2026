@@ -37,17 +37,17 @@ fi
 
 
 
-# dnf install git -y &>>$LOGS_FILE_NAME
+dnf install git -y &>>$LOGS_FILE_NAME
 
-# if [ $? -ne 0 ]
-# then
-#     echo " GIT is installed..:: SUCCESS "
-# else
-#     dnf list installed git &>>$LOGS_FILE_NAME
-#     if [ $? -eq 0 ]
-#     then
-#     echo "GIT is already installed ..:: SUCCESS"
-#     fi
-# fi
+if [ $? -ne 0 ]
+then
+    echo " GIT is installed..:: SUCCESS "
+else
+    dnf list installed git &>>$LOGS_FILE_NAME
+    if [ $? -eq 0 ]
+    then
+    echo "GIT is already installed ..:: SUCCESS"
+    fi
+fi
 
 
