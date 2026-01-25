@@ -21,21 +21,25 @@ CHECK_ROOT(){
     fi
 }
 
-VALIDATE(){
-    if [ $1 -ne 0 ]
-    then
-        echo "$2 .... :: FAILURE"
-    else
-        echo "$2 ....:: SUCCESS "
-    fi
-}
-
 CHECK_ROOT 
+
 dnf install mysql -y
-VALIDATE $? "MYSQL IS installing"
+if [ $? -ne 0 ]
+then
+    echo " MYSQL is installed..:: SUCCESS "
+else
+    echo "MYSQL is not installed ..:: FAILED"
+fi
+
+
 
 dnf install git -y
-VALIDATE $? "GIT IS Installing"
 
+if [ $? -ne 0 ]
+then
+    echo " GIT is installed..:: SUCCESS "
+else
+    echo "GIT is not installed ..:: FAILED"
+fi
 
 
