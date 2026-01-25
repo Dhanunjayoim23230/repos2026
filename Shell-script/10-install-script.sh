@@ -10,18 +10,16 @@ LOGS_FOLDER="/home/ec2-user/shell_script_logs"
 LOGS_FILE_NAME="$LOGS_FOLDER/$LOGS_FILE-$TIMESTAMP.logs"
 
 
-
-mkdir -p $LOGS_FOLDER &>>$LOGS_FILE_NAME
+mkdir -p $LOGS_FOLDER 
 
 USER_ID=$(id -u)
 
 CHECK_ROOT(){
-if [$USER_ID -ne 0 ]
-then
-    echo "You must need sudo permissions"
-fi
+    if [ $USER_ID -ne 0 ]
+    then
+        echo "You must need sudo permissions"
+    fi
 }
-
 
 VALIDATE(){
     if [ $1 -ne 0 ]
@@ -32,7 +30,7 @@ VALIDATE(){
     fi
 }
 
-CHECK_ROOT
+CHECK_ROOT 
 
 dnf list available mysql -y
 if [ $? -eq 0]
