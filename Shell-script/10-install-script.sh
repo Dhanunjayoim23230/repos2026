@@ -28,7 +28,7 @@ if [ $? -ne 0 ]
 then
     echo " MYSQL is installed..:: SUCCESS "
 else
-    dnf list installed mysql -y &>>$LOGS_FILE_NAME
+    dnf list installed mysql  &>>$LOGS_FILE_NAME
     if [$? -eq 0 ]
     then
     echo "MYSQL is already installed ..:: SUCCESS"
@@ -43,7 +43,7 @@ if [ $? -ne 0 ]
 then
     echo " GIT is installed..:: SUCCESS "
 else
-    dnf list installed git -y &>>$LOGS_FILE_NAME
+    dnf list installed git &>>$LOGS_FILE_NAME
     if [ $? -eq 0 ]
     then
     echo "GIT is already installed ..:: SUCCESS"
