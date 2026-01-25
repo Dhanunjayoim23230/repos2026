@@ -3,8 +3,8 @@
 
 #install git and mysql
 
-LOG_FOLDER=
-LOG_FILE=$(echo $0 | cut -d "." -f1)
+
+LOG_FILE=$( echo $0 | cut -d "." -f1)
 TIMESTAMP=$(date +%Y-%m-%d_%H-%M-%S)
 LOGS_FOLDER="/home/ec2-user/shell_script_logs"
 LOGS_FILE_NAME="$LOGS_FOLDER/$LOGS_FILE-$TIMESTAMP.logs"
@@ -24,13 +24,29 @@ fi
 
 
 VALIDATE(){
-    if [$1 -ne ]
+    if [ $1 -ne 0 ]
+    then
+        echo "$2 .... :: FAILURE"
+    else
+        echo "$2 ....:: SUCCESS "
+    fi
 }
 
+CHECK_ROOT
+
 dnf list available mysql -y
+if [ $? -eq 0]
+then
+    echo "Mysql is not installed"
+    dnf install mysql -y
+    VALIDATE $? "MYSQL IS installing"
+else
+    echo "Mysql is already installed"
+fi
 
-dnf install mysql -y
 
-dnf list available git -y
 
-dnf install git -y
+
+#dnf list available git -y
+
+#dnf install git -y
