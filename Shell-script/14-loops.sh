@@ -1,42 +1,42 @@
 #!bin/bash
 
-# for i in {0..5}
-# do
-#     echo " print $i"
-# done
+for i in {0..5}
+do
+    echo " print $i"
+done
 
-# echo "********************************************************"
+echo "********************************************************"
 
-# for var in apple banana orange
-# do
-#     echo " print fruits name: $var"
-# done
+for var in apple banana orange
+do
+    echo " print fruits name: $var"
+done
 
-# echo "********************************************************"
+echo "********************************************************"
 
-# j=0
+j=0
 
-# while [ $j -le 4 ]
-# do
-#     echo " Print while loop: $j "
-#     ((j++))
-# done
+while [ $j -le 4 ]
+do
+    echo " Print while loop: $j "
+    ((j++))
+done
 
-# echo "********************************************************"
+echo "****** while :: Repeats while a condition is true **************************************************"
 
-# # while read -r file
-# # do
-# #     echo "file content: $file"
-# # done < 13-logs.sh
+while read -r file
+do
+    echo "file content: $file"
+done < 13-logs.sh
 
-# echo "********************************************************"
+echo "*******until :: Runs until condition become true(Inverse of while) *************************************************"
 # #Runs until condition become true(Inverse of while)
-# i=1
-# until [ $i -gt 5 ]
-# do
-#     echo "print until loop from 1 to 5 :$i "
-#     ((i++))
-# done
+i=1
+until [ $i -gt 5 ]
+do
+    echo "print until loop from 1 to 5 :$i "
+    ((i++))
+done
 
 echo "********************************************************"
 #executes until statement becomes true
