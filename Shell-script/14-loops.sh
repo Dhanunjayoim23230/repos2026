@@ -16,9 +16,10 @@
 
 j=4
 
-while [ j -eq 4 ]
+while [ j -le 4 ]
 do
     echo " Print while loop: $j "
+    ((j++))
 done
 
 # echo "********************************************************"
