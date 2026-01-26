@@ -36,7 +36,7 @@ fi
 
 FIND_FILES=$(find $SOURCE_DIR -name "*.log" -mtime +$DAYS )
 
-if [ -n $FIND_FILES ]
+if [ -n "$FIND_FILES" ]
 then
     echo "backup eligible files:: $FIND_FILES "
 else
