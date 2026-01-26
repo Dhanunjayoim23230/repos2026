@@ -1,7 +1,7 @@
 #!bin/bash
 
-mkdir -p /home/ec2-user/source/app_logs
-mkdir -p /home/ec2-user/dest/backup_logs
+# mkdir -p /home/ec2-user/source/app_logs
+# mkdir -p /home/ec2-user/dest/backup_logs
 
 
 SOURCE_DIR=$1
@@ -20,9 +20,9 @@ fi
 
 if [ ! -d $SOURCE_DIR ]
 then
-    echo "source directory is available"
+    echo "source directory is available:: $SOURCE_DIR"
 else
-    echo "source directory not available"
+    echo "source directory not available $SOURCE_DIR "
     exit 1
 fi
 
