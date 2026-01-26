@@ -58,11 +58,11 @@
 select colour in red orange green blue violet
 do
 echo " you choose colour here :: $colour "
-    if [ "#?" -eq 2 ]
+    if [ "$#" -eq 2 ]
     then
         echo " i selected colour :: $colour "
     fi
-    if [ "#?" -eq 1 ]
+    if [ "$#" -eq 1 ]
     then
         echo " i selected colur :: $colour"
     fi
