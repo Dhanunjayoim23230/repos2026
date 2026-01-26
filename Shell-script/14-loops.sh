@@ -34,8 +34,14 @@ echo "********************************************************"
 i=1
 until [ $i -gt 5 ]
 do
-    echo "print until loop :$i "
+    echo "print until loop from 1 to 5 :$i "
     ((i++))
 done
 
 echo "********************************************************"
+i=10
+until [ $i -lt 5 ]
+do
+    echo "print until loop from 10 to 5 :$i "
+    ((i++))
+done
