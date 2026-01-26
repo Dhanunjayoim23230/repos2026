@@ -18,7 +18,7 @@ then
     USAGE
 fi
 
-if [ ! -d "$SOURCE_DIR" ]
+if [ -d "$SOURCE_DIR" ]
 then
     echo "source directory is available:: $SOURCE_DIR"
 else
