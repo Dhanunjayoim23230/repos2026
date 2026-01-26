@@ -32,9 +32,9 @@ echo "********************************************************"
 echo "********************************************************"
 #Runs until condition become true(Inverse of while)
 i=1
-until [ $i -le 5 ]
+until [ $i -gt 5 ]
 do
-    echo "ptint until loop $i "
+    echo "print until loop :$i "
     ((i++))
 done
 
