@@ -1,7 +1,7 @@
 #!bin/bash
 
-#/home/ec2-user/source/app_logs
-#/home/ec2-user/dest/backup_logs
+mkdir -p /home/ec2-user/source/app_logs
+mkdir -p /home/ec2-user/dest/backup_logs
 
 
 SOURCE_DIR=$1
