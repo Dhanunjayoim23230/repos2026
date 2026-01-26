@@ -58,7 +58,7 @@
 select colour in red orange green blue violet
 do
 echo " you choose colour :: $colour "
-    if [ $colour -eq "orange" ]
+    if [ $colour --eq "orange" ]
     then
         echo " i selected colour :: $colour "
     fi
