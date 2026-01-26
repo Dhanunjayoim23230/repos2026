@@ -12,7 +12,7 @@ USAGE(){
     if [ $# -le 2 ]
     then
         echo "USAGE:: backup <SOURCE_DIR> <DEST_DIR> <DAYS(optional)>"
-        exit 1
+    
     fi
 }
 
