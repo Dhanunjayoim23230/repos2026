@@ -6,7 +6,7 @@
 
 SOURCE_DIR=$1
 DEST_DIR=$2
-DAYS=$(3:-14)
+DAYS=${3:-14}
 
 USAGE(){
     if[ $# -ne 2 ]
