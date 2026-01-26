@@ -39,9 +39,10 @@ do
 done
 
 echo "********************************************************"
+#executes until statement becomes true
 i=10
-until [ $i -lt 5 ]
+until [ $i -lt 11 ]
 do
-    echo "print until loop from 10 to 5 :$i "
+    echo "print until loop from 10 to 11 :$i "
     ((i++))
 done
