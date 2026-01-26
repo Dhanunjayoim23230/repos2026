@@ -39,7 +39,8 @@ FIND_FILES=$(find $SOURCE_DIR -name "*.log" -mtime +$DAYS )
 if [ -n "$FIND_FILES" ]
 then
     echo "backup eligible files:: $FIND_FILES "
-    tar -cvzf $DEST_DIR $FIND_FILES
+    ZIP_FILE=$DEST_DIR/APP_LOG.zip
+    find $SOURCE_DIR -name "*.log" -mtime +$DAYS | zip -@ $ZIP_FILE
 else
     echo "No file to backup"
 fi
