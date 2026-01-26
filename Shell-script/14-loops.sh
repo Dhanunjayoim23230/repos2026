@@ -14,11 +14,11 @@ done
 
 echo "********************************************************"
 
-i=$1
+j=4
 
-while [ i -eq 4 ]
+while [ j -eq 4 ]
 do
-    echo " Print while loop: $i "
+    echo " Print while loop: $j "
 done
 
 echo "********************************************************"
