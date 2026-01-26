@@ -18,7 +18,7 @@ then
     USAGE
 fi
 
-if [ -d "$SOURCE_DIR" ]
+if [ -d $SOURCE_DIR ]
 then
     echo "source directory is available:: $SOURCE_DIR"
 else
@@ -36,7 +36,7 @@ fi
 
 FIND_FILES=$(find $SOURCE_DIR -name "*.log" -mtime +$DAYS )
 
-if [ -f $FIND_FILES ]
+if [ -n $FIND_FILES ]
 then
     echo "backup eligible files:: $FIND_FILES "
 else
