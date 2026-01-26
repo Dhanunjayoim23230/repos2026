@@ -1,18 +1,18 @@
 #!bin/bash
 
-for i in {0..5}
-do
-    echo " print $i"
-done
+# for i in {0..5}
+# do
+#     echo " print $i"
+# done
 
-echo "********************************************************"
+# echo "********************************************************"
 
-for var in apple banana orange
-do
-    echo " print fruits name: $var"
-done
+# for var in apple banana orange
+# do
+#     echo " print fruits name: $var"
+# done
 
-echo "********************************************************"
+# echo "********************************************************"
 
 j=4
 
@@ -21,10 +21,10 @@ do
     echo " Print while loop: $j "
 done
 
-echo "********************************************************"
+# echo "********************************************************"
 
-while read -r file
-do
-    echo "file content: $file"
-done < 13-logs.sh
+# while read -r file
+# do
+#     echo "file content: $file"
+# done < 13-logs.sh
 
