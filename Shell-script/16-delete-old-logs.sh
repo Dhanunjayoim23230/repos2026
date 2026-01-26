@@ -2,7 +2,7 @@
 
 SOURCE_DIR="/home/ec2-user/shell_script_logs"
 
-FILES_TO_DELETE=$(find $SOURCE_DIR -name "*.log")
+FILES_TO_DELETE=$(find $SOURCE_DIR -name "*.log" -mtime +30)
 echo "$FILES_TO_DELETE"
 # while file in line
 # do
