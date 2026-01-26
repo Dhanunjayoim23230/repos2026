@@ -5,7 +5,7 @@ SOURCE_DIR="/home/ec2-user/shell_script_logs"
 FILES_TO_DELETE=$(find $SOURCE_DIR -name "*.log" -mtime +30)
 echo "$FILES_TO_DELETE"
 
-if [ -f $FILES_TO_DELETE ]
+if [ $FILES_TO_DELETE -eq 0 ]
 then
     echo " files present to delete +30days"
     while read -r files
