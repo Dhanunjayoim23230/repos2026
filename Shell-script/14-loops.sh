@@ -24,8 +24,16 @@ done
 
 echo "********************************************************"
 
-while read -r file
-do
-    echo "file content: $file"
-done < 13-logs.sh
+# while read -r file
+# do
+#     echo "file content: $file"
+# done < 13-logs.sh
 
+echo "********************************************************"
+#Runs until condition become true(Inverse of while)
+i=1
+until [ $i -le 5 ]
+do
+    echo "ptint until loop $i "
+    ((i++))
+done
