@@ -12,4 +12,4 @@ do
    rm -rf $files
 
    echo "Files deleted :: $files "
-done <<< $FILES_TO_DELETE
+done < $FILES_TO_DELETE
