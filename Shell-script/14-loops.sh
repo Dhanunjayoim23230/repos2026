@@ -40,7 +40,7 @@
 
 echo "********************************************************"
 #executes until statement becomes true
-i=5
+i=10
 until [ $i -le 5 ]
 do
     echo "print until loop from 1 to 5 :$i "
