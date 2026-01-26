@@ -49,7 +49,14 @@
 
 # echo "********************************************************"
 
-until read -r file
+# until read -r file
+# do
+#     echo "file content: $file"
+# done < 13-logs.sh
+
+# echo "********************************************************"
+select colour in red orange green blue violet
 do
-    echo "file content: $file"
-done < 13-logs.sh
+echo" you choose colure :: $colour "
+break
+done
