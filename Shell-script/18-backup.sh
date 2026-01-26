@@ -39,7 +39,7 @@ FIND_FILES=$(find $SOURCE_DIR -name "*.log" -mtime +$DAYS )
 if [ -n "$FIND_FILES" ]
 then
     echo "backup eligible files:: $FIND_FILES "
-    tar -cvzf $FIND_FILES $DEST_DIR
+    tar -cvzf $DEST_DIR $FIND_FILES
 else
     echo "No file to backup"
 fi
