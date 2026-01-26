@@ -18,7 +18,7 @@ then
     USAGE
 fi
 
-if [ -d $SOURCE_DIR ]
+if [ ! -d $SOURCE_DIR ]
 then
     echo "source directory is available"
 else
@@ -26,7 +26,7 @@ else
     exit 1
 fi
 
-if [ -d $DEST_DIR ]
+if [ ! -d $DEST_DIR ]
 then
     echo "destination directory is available"
 else
