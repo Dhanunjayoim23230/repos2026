@@ -9,14 +9,14 @@ DEST_DIR=$2
 DAYS=${3:-14}
 
 USAGE(){
-    if [ $# -le 2 ]
-    then
         echo "USAGE:: backup <SOURCE_DIR> <DEST_DIR> <DAYS(optional)>"
-    
-    fi
+        exit 1
 }
 
-USAGE
+if [ $# -lt 2 ]
+then
+    USAGE
+fi
 
 if [ -f $SOURCE_DIR ]
 then
