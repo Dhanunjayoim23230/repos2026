@@ -26,11 +26,11 @@ else
     exit 1
 fi
 
-if [ ! -d $DEST_DIR ]
+if [ -d $DEST_DIR ]
 then
-    echo "destination directory is available"
+    echo "destination directory is available ::$DEST_DIR"
 else
-    echo "destination directory not available"
+    echo "destination directory not available ::$DEST_DIR"
     exit 1
 fi
 
