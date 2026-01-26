@@ -14,6 +14,8 @@ done
 
 echo "********************************************************"
 
+i=$1
+
 while [ i -eq 4 ]
 do
     echo " Print while loop: $i "
