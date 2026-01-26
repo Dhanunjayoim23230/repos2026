@@ -16,7 +16,7 @@
 
 j=0
 
-while [ j -le 4 ]
+while [ $j -le 4 ]
 do
     echo " Print while loop: $j "
     ((j++))
